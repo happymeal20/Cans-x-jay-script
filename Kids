@@ -1,4 +1,4 @@
----- (NEW) update v3
+--- update v4 New
 
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
@@ -13,6 +13,10 @@ local autofarm = Instance.new("TextButton")
 local HoodShark = Instance.new("TextButton")
 local InfiniteYield = Instance.new("TextButton")
 local Carnivalplace = Instance.new("TextButton")
+local Policestation = Instance.new("TextButton")
+local Gunplace = Instance.new("TextButton")
+local Foodplace = Instance.new("TextButton")
+local Esp = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
 
 --Properties:
@@ -31,27 +35,33 @@ main.Visible = false
 
 Close.Name = "Close"
 Close.Parent = main
-Close.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Close.Position = UDim2.new(0.905649722, 0, 0, 0)
 Close.Size = UDim2.new(0, 68, 0, 50)
 Close.Font = Enum.Font.GothamBold
 Close.Text = "X"
-Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
 Close.TextScaled = true
 Close.TextSize = 14.000
+Close.TextStrokeColor3 = Color3.fromRGB(207, 0, 0)
+Close.TextStrokeTransparency = 0.640
+Close.TextTransparency = 0.080
 Close.TextWrapped = true
 
 label.Name = "label"
 label.Parent = main
-label.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+label.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 label.BorderColor3 = Color3.fromRGB(0, 0, 0)
 label.Size = UDim2.new(0, 660, 0, 50)
 label.Font = Enum.Font.GothamBold
-label.Text = "Jay x Cans lol"
-label.TextColor3 = Color3.fromRGB(0, 0, 0)
+label.Text = "Cans x Jay"
+label.TextColor3 = Color3.fromRGB(255, 255, 255)
 label.TextScaled = true
 label.TextSize = 14.000
+label.TextStrokeColor3 = Color3.fromRGB(207, 0, 0)
+label.TextStrokeTransparency = 0.640
+label.TextTransparency = 0.080
 label.TextWrapped = true
 
 SmallScript.Name = "Small Script"
@@ -3088,6 +3098,84 @@ Carnivalplace.MouseButton1Down:connect(function()
 end)
 
 
+Policestation.Name = "Police station"
+Policestation.Parent = main
+Policestation.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Policestation.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Policestation.Position = UDim2.new(0.731138527, 0, 0.278745651, 0)
+Policestation.Size = UDim2.new(0, 183, 0, 66)
+Policestation.Font = Enum.Font.GothamBold
+Policestation.Text = "Police station"
+Policestation.TextColor3 = Color3.fromRGB(0, 0, 0)
+Policestation.TextScaled = true
+Policestation.TextSize = 14.000
+Policestation.MouseButton1Down:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-243, 21, -80)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+
+Gunplace.Name = "Gun place"
+Gunplace.Parent = main
+Gunplace.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Gunplace.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Gunplace.Position = UDim2.new(0.731138527, 0, 0.444250882, 0)
+Gunplace.Size = UDim2.new(0, 183, 0, 66)
+Gunplace.Font = Enum.Font.GothamBold
+Gunplace.Text = "Gun place"
+Gunplace.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gunplace.TextScaled = true
+Gunplace.TextSize = 14.000
+Gunplace.MouseButton1Down:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-871, -38, -592)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+
+Foodplace.Name = "Food place"
+Foodplace.Parent = main
+Foodplace.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Foodplace.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Foodplace.Position = UDim2.new(0.731138527, 0, 0.609756112, 0)
+Foodplace.Size = UDim2.new(0, 183, 0, 66)
+Foodplace.Font = Enum.Font.GothamBold
+Foodplace.Text = "Food Place"
+Foodplace.TextColor3 = Color3.fromRGB(0, 0, 0)
+Foodplace.TextScaled = true
+Foodplace.TextSize = 14.000
+Foodplace.MouseButton1Down:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-787, -39, -934)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+
+Esp.Name = "Esp"
+Esp.Parent = main
+Esp.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Esp.Position = UDim2.new(0.731138527, 0, 0.78222996, 0)
+Esp.Size = UDim2.new(0, 183, 0, 66)
+Esp.Font = Enum.Font.GothamBold
+Esp.Text = "ESP"
+Esp.TextColor3 = Color3.fromRGB(0, 0, 0)
+Esp.TextSize = 80.000
+Esp.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD ESP.txt"))()
+end)
+
+
 Open.Name = "Open"
 Open.Parent = ScreenGui
 Open.BackgroundColor3 = Color3.fromRGB(141, 0, 0)
@@ -3103,7 +3191,7 @@ Open.TextWrapped = true
 
 -- Scripts:
 
-local function DDHAH_fake_script() -- Close.LocalScript 
+local function LOHIRZW_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local main = script.Parent.Parent
@@ -3112,8 +3200,8 @@ local function DDHAH_fake_script() -- Close.LocalScript
 		main.Visible = false
 	end)
 end
-coroutine.wrap(DDHAH_fake_script)()
-local function FEJZC_fake_script() -- Open.LocalScript 
+coroutine.wrap(LOHIRZW_fake_script)()
+local function GNXZM_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local main = script.Parent.Parent.main
@@ -3122,4 +3210,4 @@ local function FEJZC_fake_script() -- Open.LocalScript
 		main.Visible = true
 	end)
 end
-coroutine.wrap(FEJZC_fake_script)()
+coroutine.wrap(GNXZM_fake_script)()
